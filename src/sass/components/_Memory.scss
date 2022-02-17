@@ -1,0 +1,42 @@
+.memoryTitle{
+
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 4px solid rgb(126, 125, 125);
+    width: 22%;
+    padding: 5px;
+    margin-bottom: 10px;
+    @include mobile {
+        width: 80%;
+    }
+}
+
+
+.memory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      @include mobile {
+          flex-direction: column;
+      }
+    &__video{
+        margin-bottom:20px;
+        border-radius: 1%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      @include tablet {
+          margin: 0 auto;
+          margin-bottom:30px;
+          padding: 0;
+      }
+
+     @include mobile {
+         video{
+             width:300px;
+         }
+     }
+
+    
+    }
+  
+}

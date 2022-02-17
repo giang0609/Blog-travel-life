@@ -1,0 +1,94 @@
+.aboutUs {
+    &__header {
+        position: relative;
+    @include mobile {
+        position: static;
+    }
+        &__img {
+            margin-bottom: 70px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            @include mobile {
+                margin-bottom: 0;
+               }
+             
+        }
+           
+        &__infor {
+            width: 100%;
+            position: absolute;
+            top: 350px;
+            left: 900px;
+          @include tablet {
+            top: 255px;
+            left: 720px;
+          }
+          @include mobile {
+             position: absolute;
+             left: 25%;
+             top: 35%;
+          }
+            &__img {
+                width: 200px;
+                height: 175px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            &__sub {
+                h5 {
+                    text-align: center;
+                    width: 200px;
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 50px;
+                }
+
+                p {
+                    width: 200px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        width: 100%;
+        position: relative;
+        left:20px;
+        @include mobile {
+            top: 250px;
+           width: 100%;
+            left: 0;
+        }
+
+        &__img {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            @include tablet {
+                width: 70%;
+                margin-top: 70px;
+            }
+            @include mobile {
+              
+               width: 100%;
+                
+            }
+
+        }
+        &__text{
+            width: 20%;
+            position:absolute;
+            right: 45px;
+            top:100px;
+
+            @include mobile {
+                top: 270px;
+               width: 100%;
+                left: 0;
+            }
+        }
+     
+    
+    }
+
+}

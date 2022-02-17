@@ -1,0 +1,36 @@
+.contact{
+    display: flex;
+    background-color:white;
+    justify-content:center;
+}
+.contactLeft{
+    width:50%
+}
+.contactLeft img{
+ width:100%;
+}
+
+.contactRight {
+display: flex;
+flex-direction: column;
+padding: 0 10px;
+width:50%;
+padding-top: 50px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contactRight button{
+    padding: 10px 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+button:hover {
+    background-color:rgba(255, 255, 255, 0.116);
+    color: black;
+    border: 1px solid black;
+}

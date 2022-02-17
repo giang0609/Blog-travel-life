@@ -1,0 +1,32 @@
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.349);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 0%, rgba(255, 255, 255, 0.253) 100%);
+
+}
+.carousel-inner{
+    border-radius: 5px;
+
+}
+
+
+
+
+@include mobile {
+    .carousel-caption {
+        position: absolute;
+        right: 0%;
+        bottom: 1.25rem;
+        left: 0%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+
+        h3{
+            font-size: 10px;
+        }
+        p{
+            font-size: 8px;
+        }
+    }
+}
